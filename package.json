@@ -1,14 +1,15 @@
 {
-  "name": "my-app",
+  "name": "projectnetflik",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fuse.js": "5.2.3",
+    "normalize.css": "8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-router-dom": "5.2.0",
-    "fuse.js": "5.2.3",
-    "normalize.css": "8.0.1",
-    "styled-components": "5.1.0"
+    "react-scripts": "^4.0.1",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
