@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Form } from '../components'
 import { HeaderContainer } from '../containers/header'
 
@@ -6,6 +6,8 @@ export default function Signin() {
     const [error, setError] = useState('')
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
+
+    const isInvalid = password === '' | emailAddress === ''
 
     const handleSignin = (event) => {
         event.preventDefault()
@@ -20,6 +22,7 @@ export default function Signin() {
 
                     <Form.Base onSubmit={handleSignin} method="POST">
                         <Form.Input 
+                            type="email"
                             placeholder="Email address"
                             value={emailAddress}
                             onChange={({ target }) => setEmailAddress(target.value)}
@@ -31,7 +34,7 @@ export default function Signin() {
                             value={password}
                             onChange={({ target }) => setPassword(target.value)}
                         />
-                        <Form.Submit disabled={false} type="submit">
+                        <Form.Submit disabled={isInvalid} type="submit">
                             Sign In
                         </Form.Submit>
                         
