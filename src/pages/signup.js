@@ -1,27 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import { Form } from '../components'
+import React, { useState } from 'react'
 import { HeaderContainer } from '../containers/header'
+import { Form } from '../components'
+import * as ROUTES from '../constants/routes'
 import { FooterSigninContainer } from '../containers/footer-signin'
 
-export default function Signin() {
-    const [error, setError] = useState('')
+export default function Signup() {
+    const [firstName, setFirstName] = useState('')
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
 
-    const isInvalid = password === '' | emailAddress === ''
+    const isInvalid = firstName === '' || emailAddress === '' || password === ''
 
-    const handleSignin = (event) => {
+    const handleSignup = (event) => {
         event.preventDefault()
     }
 
     return (
         <>
             <HeaderContainer>
+                {/* <p style={({color: 'white'})}>Hello</p> */}
                 <Form>
-                    <Form.Title>Sign In</Form.Title>
+                    <Form.Title>Sign Up</Form.Title>
                     {error && <Form.Error>{error}</Form.Error>}
 
-                    <Form.Base onSubmit={handleSignin} method="POST">
+                    <Form.Base onSubmit={handleSignup} method="POST">
+                        <Form.Input 
+                            placeholder="First Name"
+                            value={firstName}
+                            onChange={({ target }) => setFirstName(target.value)}
+                        />
                         <Form.Input 
                             placeholder="Email Address"
                             value={emailAddress}
@@ -29,24 +37,24 @@ export default function Signin() {
                         />
                         <Form.Input 
                             type="password"
-                            autoComplete="off"
                             placeholder="Password"
                             value={password}
+                            autoComplete="off"
                             onChange={({ target }) => setPassword(target.value)}
                         />
                         <Form.Submit disabled={isInvalid} type="submit">
-                            Sign In
+                            Submit
                         </Form.Submit>
-                        
+
                         <Form.Text>
-                            New to Netflix? <Form.Link to="/signup">Sign up</Form.Link>
+                            Already a user? <Form.Link to="/signin">Sign in</Form.Link>
                         </Form.Text>
                         <Form.TextSmall>
-                            This page is protected by Google reCAPTCHA
+                            This page is protected by Google reCAPTCHA.
                         </Form.TextSmall>
                     </Form.Base>
                 </Form>
-            <FooterSigninContainer />
+                <FooterSigninContainer/>
             </HeaderContainer>
         </>
     )
