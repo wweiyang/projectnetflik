@@ -9,7 +9,7 @@ export function BrowseContainer() {
     const [profile, setProfile] = useState({})
     
     const user = {
-        displayName: "Lim Peh",
+        displayName: "Bon Chon",
         photoURL: "1"
     }
 
