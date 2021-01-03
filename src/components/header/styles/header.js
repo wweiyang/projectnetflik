@@ -45,7 +45,7 @@ export const Link = styled.p`
 
 export const ButtonLink = styled(ReachRouterLink)`
     display: block;
-    background-color: #e50914;
+    background-color: #FFA51D;
     width: 84px;
     height: fit-content;
     color: white;
@@ -58,7 +58,7 @@ export const ButtonLink = styled(ReachRouterLink)`
     box-sizing: border-box;
 
     &:hover {
-        background: #f40612;
+        background: #FF713B;
     }
 `;
 
