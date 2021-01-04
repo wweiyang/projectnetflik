@@ -6,7 +6,7 @@ import { Browse, Home, Signin, Signup } from './pages'
 
 export function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Switch>
             <Route path={ROUTES.SIGN_IN}>
                 <Signin />
