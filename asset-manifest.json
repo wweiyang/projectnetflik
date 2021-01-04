@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/projectnetflik/static/js/main.df2bba77.chunk.js",
-    "main.js.map": "/projectnetflik/static/js/main.df2bba77.chunk.js.map",
+    "main.js": "/projectnetflik/static/js/main.e52cbf1f.chunk.js",
+    "main.js.map": "/projectnetflik/static/js/main.e52cbf1f.chunk.js.map",
     "runtime-main.js": "/projectnetflik/static/js/runtime-main.48c34ae7.js",
     "runtime-main.js.map": "/projectnetflik/static/js/runtime-main.48c34ae7.js.map",
     "static/js/2.917ff2d9.chunk.js": "/projectnetflik/static/js/2.917ff2d9.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.48c34ae7.js",
     "static/js/2.917ff2d9.chunk.js",
-    "static/js/main.df2bba77.chunk.js"
+    "static/js/main.e52cbf1f.chunk.js"
   ]
 }
