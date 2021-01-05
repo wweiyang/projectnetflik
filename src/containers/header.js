@@ -11,6 +11,7 @@ export function HeaderContainer({ children }) {
                     src={`${process.env.PUBLIC_URL}/images/misc/logo-new.svg`}
                     alt="Netflik"
                 />
+                <Header.Text>This is a personal development project for learning purposes.</Header.Text>
                 <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
             </Header.Frame>
             {children}

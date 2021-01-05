@@ -13,7 +13,7 @@ export function FooterSigninContainer() {
                         <FooterSignin.Link href="#">Investor Relations</FooterSignin.Link>
                         <FooterSignin.Link href="#">Ways to Watch</FooterSignin.Link>
                         <FooterSignin.Link href="#">Corporate Information</FooterSignin.Link>
-                        <FooterSignin.Link href="#">Netflix Originals</FooterSignin.Link>
+                        <FooterSignin.Link href="#">Netflik Originals</FooterSignin.Link>
                     </FooterSignin.Column>
 
                     <FooterSignin.Column>

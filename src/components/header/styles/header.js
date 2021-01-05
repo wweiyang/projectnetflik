@@ -46,7 +46,8 @@ export const Link = styled.p`
 export const ButtonLink = styled(ReachRouterLink)`
     display: block;
     background-color: #FFA51D;
-    width: 84px;
+    min-width: 84px;
+    margin-left: 40px;
     height: fit-content;
     color: white;
     border: 0;
@@ -60,6 +61,10 @@ export const ButtonLink = styled(ReachRouterLink)`
     &:hover {
         background: #FF713B;
     }
+
+    @media (min-width: 1449px) {
+        margin-left: 90px;
+    }
 `;
 
 export const Logo = styled.img`
@@ -70,5 +75,15 @@ export const Logo = styled.img`
     @media (min-width: 1449px) {
         height: 45px;
         width: 167px;
+    }
+`
+
+export const Text = styled.p`
+    text-align: center;
+    color: #757575;
+    padding: 0 1em;
+
+    @media (max-width: 1449px) {
+        font-size: 12px;
     }
 `
