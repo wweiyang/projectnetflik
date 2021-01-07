@@ -84,12 +84,24 @@ export const Logo = styled.img`
     }
 `
 
-export const Text = styled.p`
+export const Group = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+export const Text = styled.div`
+    color: white;
+    font-size: 22px;
+    line-height: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+`
+
+export const Caption = styled.p`
     text-align: center;
     color: #757575;
     padding: 0 1em;
 
-    @media (max-width: 1449px) {
+    @media (max-width: 1000px) {
         font-size: 12px;
     }
 `

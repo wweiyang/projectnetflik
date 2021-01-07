@@ -9,7 +9,7 @@ export function SelectProfileContainer({ user, setProfile }) {
                 <Header.Frame>
                     <Header.Logo 
                         to={ROUTES.HOME}
-                        src={`${process.env.PUBLIC_URL}/images/misc/logo-new.svg`}
+                        src={`${process.env.PUBLIC_URL}/images/misc/logo.svg`}
                         alt="Netflix"
                     />
                 </Header.Frame>

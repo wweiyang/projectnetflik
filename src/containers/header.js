@@ -8,10 +8,10 @@ export function HeaderContainer({ children }) {
             <Header.Frame>
                 <Header.Logo 
                     to={ROUTES.HOME}
-                    src={`${process.env.PUBLIC_URL}/images/misc/logo-new.svg`}
+                    src={`${process.env.PUBLIC_URL}/images/misc/logo.svg`}
                     alt="Netflik"
                 />
-                <Header.Text>This is a personal project for learning purposes.</Header.Text>
+                <Header.Caption>This is a personal project for learning purposes.</Header.Caption>
                 <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
             </Header.Frame>
             {children}
