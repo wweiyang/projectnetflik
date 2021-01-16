@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/projectnetflik/static/js/main.eb070ac0.chunk.js",
-    "main.js.map": "/projectnetflik/static/js/main.eb070ac0.chunk.js.map",
+    "main.js": "/projectnetflik/static/js/main.ae4785e9.chunk.js",
+    "main.js.map": "/projectnetflik/static/js/main.ae4785e9.chunk.js.map",
     "runtime-main.js": "/projectnetflik/static/js/runtime-main.48c34ae7.js",
     "runtime-main.js.map": "/projectnetflik/static/js/runtime-main.48c34ae7.js.map",
-    "static/js/2.f76a2201.chunk.js": "/projectnetflik/static/js/2.f76a2201.chunk.js",
-    "static/js/2.f76a2201.chunk.js.map": "/projectnetflik/static/js/2.f76a2201.chunk.js.map",
+    "static/js/2.c08118a7.chunk.js": "/projectnetflik/static/js/2.c08118a7.chunk.js",
+    "static/js/2.c08118a7.chunk.js.map": "/projectnetflik/static/js/2.c08118a7.chunk.js.map",
     "index.html": "/projectnetflik/index.html",
-    "static/js/2.f76a2201.chunk.js.LICENSE.txt": "/projectnetflik/static/js/2.f76a2201.chunk.js.LICENSE.txt"
+    "static/js/2.c08118a7.chunk.js.LICENSE.txt": "/projectnetflik/static/js/2.c08118a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48c34ae7.js",
-    "static/js/2.f76a2201.chunk.js",
-    "static/js/main.eb070ac0.chunk.js"
+    "static/js/2.c08118a7.chunk.js",
+    "static/js/main.ae4785e9.chunk.js"
   ]
 }
