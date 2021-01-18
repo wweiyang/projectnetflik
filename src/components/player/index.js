@@ -1,6 +1,6 @@
 import React, { useState, useContext, createContext } from 'react'
 import ReactDOM from 'react-dom'
-import { Container, Overlay, Inner, Button } from './styles/player'
+import { Container, Overlay, Inner, Button, Close } from './styles/player'
 
 export const PlayerContext = createContext()
 
@@ -24,6 +24,7 @@ Player.Video = function PlayerVideo({ ...restProps }) {
                     <video id="netflik-player" controls>
                         <source src={`${process.env.PUBLIC_URL}/videos/bunny.mp4`} type="video/mp4" />
                     </video>
+                    <Close />
                 </Inner>
             </Overlay>,
             document.body
