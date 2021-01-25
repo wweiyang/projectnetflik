@@ -80,10 +80,10 @@ export const Logo = styled.img`
     width: 108px;
     margin-right: 40px;
 
-    @media (min-width: 1449px) {
-        height: 45px;
-        width: 167px;
-    }
+    // @media (min-width: 1449px) {
+    //     height: 45px;
+    //     width: 167px;
+    // }
 
     // @media (min-width: 600px) {
     //     margin-right: 40px;
