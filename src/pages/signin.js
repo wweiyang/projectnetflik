@@ -35,6 +35,25 @@ export default function Signin() {
             })
     }
 
+    const handleSkipSignin = (event) => {
+        event.preventDefault()
+
+        firebase
+            .auth()
+            .signInWithEmailAndPassword('demo@gmail.com', 'demo123')
+            .then(() => {
+                setEmailAddress('')
+                setPassword('')
+                setError('')
+                history.push(ROUTES.BROWSE)
+            })
+            .catch((error) => {
+                setEmailAddress('')
+                setPassword('')
+                setError(error.message)
+            })
+    }
+
     return (
         <>
             <HeaderContainer>
@@ -65,6 +84,12 @@ export default function Signin() {
                         <Form.TextSmall>
                             This page is protected by Google reCAPTCHA
                         </Form.TextSmall>
+                    </Form.Base>
+
+                    <Form.Base onSubmit={handleSkipSignin} method="POST">
+                        <Form.Submit type="submit">
+                            Skip Sign In Process
+                        </Form.Submit>
                     </Form.Base>
                 </Form>
             <FooterSigninContainer />
