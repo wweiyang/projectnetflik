@@ -65,29 +65,12 @@ export const ButtonLink = styled(ReachRouterLink)`
     &:hover {
         background: #D47000;
     }
-
-    @media (min-width: 1449px) {
-        margin-left: 90px;
-    }
-
-    // @media (min-width: 600px) {
-    //     margin-left: 40px;
-    // }
 `;
 
 export const Logo = styled.img`
     height: 32px;
     width: 108px;
     margin-right: 40px;
-
-    // @media (min-width: 1449px) {
-    //     height: 45px;
-    //     width: 167px;
-    // }
-
-    // @media (min-width: 600px) {
-    //     margin-right: 40px;
-    // }
 `
 
 export const Group = styled.div`
