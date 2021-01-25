@@ -26,7 +26,7 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     height: 70px;
-    background: #FFA51D;
+    background: #e87c03;
     color: white;
     text-transform: uppercase;
     padding: 0 32px;
@@ -45,7 +45,7 @@ export const Button = styled.button`
     }
 
     &:hover {
-        background: #FF713B;
+        background: #D47000;
     }
     
     @media (max-width: 1000px) {

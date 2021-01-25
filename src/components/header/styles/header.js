@@ -45,7 +45,7 @@ export const Link = styled.p`
 
 export const ButtonLink = styled(ReachRouterLink)`
     display: block;
-    background-color: #FFA51D;
+    background-color: #e87c03;
     min-width: 84px;
     margin-left: 40px;
     height: fit-content;
@@ -59,7 +59,7 @@ export const ButtonLink = styled(ReachRouterLink)`
     box-sizing: border-box;
 
     &:hover {
-        background: #FF713B;
+        background: #D47000;
     }
 
     @media (min-width: 1449px) {
@@ -143,7 +143,7 @@ export const PlayButton = styled.button`
     transition: background-color: 0.5s ease;
 
     &:hover {
-        background: #FFA51D;
+        background: #e87c03;
         color: white;
     }
 `
