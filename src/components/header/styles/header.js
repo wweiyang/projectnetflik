@@ -4,7 +4,11 @@ import { Link as ReachRouterLink } from 'react-router-dom';
 export const Background = styled.section`
     display: flex;
     flex-direction: column;
-    background: url(${({ src }) => (src ? `${process.env.PUBLIC_URL}/images/misc/${src}.jpg` : `${process.env.PUBLIC_URL}/images/misc/home-bg.jpg`)}) top left / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(${({ src }) => (src ? 
+                    `${process.env.PUBLIC_URL}/images/misc/${src}.jpg` 
+                    : `${process.env.PUBLIC_URL}/images/misc/home-bg.jpg`)}) 
+                    center / cover no-repeat;
     
     @media (max-width: 1100px) {
         ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
