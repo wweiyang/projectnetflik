@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Netflik project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was the final project of the Scrimba Frontend Developer course, and also the largest project. The goal was to build a Netflix clone, mainly the homepage, sign in, sign out and mockup browse page. This project introduced application architecture, and organising the code into separate folders, while making the components as modular as possible.
 
-## Available Scripts
+Compound components were used in this project, as a way of making the code more structured and reusable. Styled components were used in place of regular CSS, allowing props to be passed down to be used in styling. Firebase was used for storing data and user authentication.
 
-In the project directory, you can run:
+## Overall process of the project:
+- Create React App, set up GitHub repository for version control
+- Set up React Router for the pages
+- Build Jumbotron, Accordion, Opt-In-Form, Header, Footer components for Home page
+- Set up Firebase storage, connect application to Firebase
+- Hydrate Firebase with data
+- Create custom hook to retrieve data from Firebase
+- Build Form component for Sign In and Sign Up pages
+- Build Profile component
+- Set up Firebase authentication
+- Add Firebase authentication to Sign In, Sign Up pages
+- Build Card component for Browse page
+- Implement live search using Fuse.js
+- Build Player component for Browse page
+- Create custom authentication listener hook to make routes protected
+- Deploy app on Github Pages, and subsequently switched to Netlify
 
-### `npm start`
+Throughout the course of this project, I met a bunch of obstacles. Using Firebase was confusing to me at times, like implementing the user authentication, and retrieving the stored data. So I took the time to go through some of the documentation to help me with my overall understanding of how it works.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Deploying the application onto Github Pages was another problem. Firstly, images were not showing, and I ended up discovering that the image path was the problem. Adding the environment variable to the path resolved the issue. Secondly, all the pages other than the homepage were showing 404 error on refresh. After doing a search online and asking in the Discord group for the course, I found out that Github Pages didn’t work well with React’s BrowserRouter. The workaround solutions were quite messy too. So I ended up just deploying it onto Netlify instead, and it worked like a charm.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lastly was understanding how the entire application was structured. I find that application architecture is one of the most important things to learn. As this project was part of the course, I had the benefit of having the instructor's help in providing the high level application architecture. But working on a large project on my own would definitely be much harder. Finishing the project made things slightly clearer for me, and I feel that this is something that only comes with more practise and experience.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies overview:
+- React
+- Compound components (design pattern for collating components and making them modular)
+- Styled components (CSS in JS)
+- Firebase
