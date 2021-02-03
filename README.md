@@ -1,5 +1,7 @@
 # Netflik project
 
+Link: https://projectnetflik.netlify.app/
+
 This project was the final project of the Scrimba Frontend Developer course, and also the largest project. The goal was to build a Netflix clone, mainly the homepage, sign in, sign out and mockup browse page. This project introduced application architecture, and organising the code into separate folders, while making the components as modular as possible.
 
 Compound components were used in this project, as a way of making the code more structured and reusable. Styled components were used in place of regular CSS, allowing props to be passed down to be used in styling. Firebase was used for storing data and user authentication.
