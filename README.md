@@ -9,17 +9,17 @@ Compound components were used in this project, as a way of making the code more 
 ## Overall process of the project:
 - Create React App, set up GitHub repository for version control
 - Set up React Router for the pages
-- Build Jumbotron, Accordion, Opt-In-Form, Header, Footer components for Home page
+- Build and style Jumbotron, Accordion, Opt-In-Form, Header, Footer components for Home page
 - Set up Firebase storage, connect application to Firebase
 - Hydrate Firebase with data
 - Create custom hook to retrieve data from Firebase
-- Build Form component for Sign In and Sign Up pages
-- Build Profile component
+- Build and style Form component for Sign In and Sign Up pages
+- Build and style Profile component
 - Set up Firebase authentication
 - Add Firebase authentication to Sign In, Sign Up pages
-- Build Card component for Browse page
+- Build and style Card component for Browse page
 - Implement live search using Fuse.js
-- Build Player component for Browse page
+- Build and style Player component for Browse page
 - Create custom authentication listener hook to make routes protected
 - Deploy app on Github Pages, and subsequently switched to Netlify
 
