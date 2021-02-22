@@ -40,7 +40,7 @@ export default function Signin() {
 
         firebase
             .auth()
-            .signInWithEmailAndPassword('demo@gmail.com', 'demo123')
+            .signInWithEmailAndPassword('demo@mail.com', 'demo123')
             .then(() => {
                 setEmailAddress('')
                 setPassword('')
