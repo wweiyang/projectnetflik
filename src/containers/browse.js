@@ -5,6 +5,7 @@ import * as ROUTES from '../constants/routes'
 import { FirebaseContext } from '../context/firebase'
 import { SelectProfileContainer } from './profiles'
 import { FooterContainer } from './footer'
+import { useAuthListener } from '../hooks'
 
 export function BrowseContainer({ slides }) {
     const [category, setCategory] = useState('series')
@@ -15,12 +16,12 @@ export function BrowseContainer({ slides }) {
 
     const { firebase } = useContext(FirebaseContext)
 
-    const user = {
-        displayName: "Ben",
-        photoURL: "1"
-    }
+    // const user = {
+    //     displayName: "Ben",
+    //     photoURL: "1"
+    // }
 
-    // const user = firebase.auth().currentUser
+    const { user } = useAuthListener()
 
     useEffect(() => {
         setTimeout(() => {
@@ -66,11 +67,11 @@ export function BrowseContainer({ slides }) {
                     <Header.Group>
                         <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                         <Header.Profile>
-                            <Header.Picture src={user.photoURL} />
+                            <Header.Picture src={user.photoURL ? user.photoURL : "1"} />
                             <Header.Dropdown>
                                 <Header.Group>
-                                    <Header.Picture src={user.photoURL} />
-                                    <Header.Link>{user.displayName}</Header.Link>
+                                    <Header.Picture src={user.photoURL ? user.photoURL : "1"} />
+                                    <Header.Link>{user.displayName ? user.displayName : ""}</Header.Link>
                                 </Header.Group>
                                 <Header.Group>
                                     <Header.Link onClick={() => firebase.auth().signOut()}>Sign out</Header.Link>
